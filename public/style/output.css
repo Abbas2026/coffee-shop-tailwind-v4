@@ -6,11 +6,12 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-900: oklch(41.4% 0.112 45.904);
-    --text-6xl: 3.75rem;
-    --text-6xl--line-height: 1;
+    --color-green-600: oklch(62.7% 0.194 149.214);
+    --text-4xl: 2.25rem;
+    --text-4xl--line-height: calc(2.5 / 2.25);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --font-Dana: "Dana";
   }
 }
 @layer base {
@@ -159,11 +160,37 @@
   }
 }
 @layer utilities {
-  .bg-amber-900 {
-    background-color: var(--color-amber-900);
+  .font-Dana {
+    font-family: var(--font-Dana);
   }
-  .text-6xl {
-    font-size: var(--text-6xl);
-    line-height: var(--tw-leading, var(--text-6xl--line-height));
-  }
+}
+@font-face {
+  font-family: "Morabba Light";
+  src: url("../fonts/Morabba/woff2/Morabba-Light.woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Morabba Medium";
+  src: url("../fonts/Morabba/woff2/Morabba-Medium.woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Morabba Bold";
+  src: url("../fonts/Morabba/woff2/Morabba-Bold.woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Dana";
+  src: url("../fonts/Dana/woff2/DanaFaNum-Regular.woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Dana Medium";
+  src: url("../fonts/Dana/woff2/DanaFaNum-Medium.woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Dana DemiBold";
+  src: url("../fonts/Dana/woff2/DanaFaNum-DemiBold.woff2");
+  font-display: swap;
 }
