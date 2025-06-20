@@ -38,4 +38,6 @@
         --font-Morabba-Light:"Morabba Light";
         --font-Morabba-Medium:"Morabba Medium";
         --font-Morabba-Bold:"Morabba Bold";
+        --tracking-tightest:-0.065em;
+
     }
